@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table of Horse Breeds</title>
+    <style>
+        body {
+            width: 1024px;
+            margin: 0 auto;
+            padding: 40px;
+            background-color: #f5f5dc;
+            font-family: Georgia, serif;
+            font-size: 14pt;
+            line-height: 1.4em;
+            box-sizing: border-box;
+        }
+        h1 {
+            color: #8b4513;
+            font-family: 'Brush Script MT', cursive;
+            font-size: 36pt;
+            margin-bottom: 5px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+        .author {
+            color: #8b4513;
+            font-size: 12pt;
+            margin-bottom: 30px;
+            font-style: italic;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        nav a {
+            color: #8b4513;
+            text-decoration: none;
+            font-size: 14pt;
+            padding: 10px 20px;
+            border: 2px solid #8b4513;
+            border-radius: 5px;
+            background-color: #fff8dc;
+            box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #8b4513;
+            color: #fff8dc;
+        }
+        p {
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+        table {
+            margin: 30px auto;
+            border-collapse: collapse;
+            border: 2px solid #8b4513;
+            box-shadow: 3px 4px 8px rgba(139, 69, 19, 0.4);
+            background-color: white;
+            width: 90%;
+        }
+        thead {
+            position: sticky;
+            top: 0;
+            background: #d2b48c;
+            color: #3d2817;
+        }
+        th {
+            padding: 15px;
+            text-align: left;
+            font-size: 13pt;
+            border-bottom: 3px solid #654321;
+        }
+        td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #daa520;
+        }
+        tr:nth-child(odd) {
+            background: #faf0e6;
+        }
+        tr:nth-child(even) {
+            background: white;
+        }
+        tbody tr:hover {
+            background-color: #ffe4b5;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Horse Breeds</h1>
+    <p class="author">Made by Gracie Harran</p>
+    
+    <nav>
+        <a href="index.html">← Back to Main Page</a>
+    </nav>
+    
+    <p>Throughout history, humans have selectively bred horses for various purposes, resulting in hundreds of distinct breeds with unique characteristics. From the powerful draft horses that plowed fields and pulled heavy loads, to the swift Thoroughbreds bred for racing, to the gentle ponies beloved by children, each breed has been developed to excel in specific tasks and environments. The table below showcases some of the most popular and recognizable horse breeds, their typical heights, primary uses, and countries of origin.</p>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Breed Name</th>
+                <th>Height (hands)*</th>
+                <th>Primary Use</th>
+                <th>Origin</th>
+                <th>Temperament</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Arabian</td>
+                <td>14.1 - 15.1</td>
+                <td>Endurance, Show</td>
+                <td>Arabian Peninsula</td>
+                <td>Intelligent, Spirited</td>
+            </tr>
+            <tr>
+                <td>Thoroughbred</td>
+                <td>15.2 - 17.0</td>
+                <td>Racing, Sport</td>
+                <td>England</td>
+                <td>Hot-blooded, Athletic</td>
+            </tr>
+            <tr>
+                <td>Quarter Horse</td>
+                <td>14.0 - 16.0</td>
+                <td>Western Riding, Ranch Work</td>
+                <td>United States</td>
+                <td>Calm, Versatile</td>
+            </tr>
+            <tr>
+                <td>Clydesdale</td>
+                <td>16.0 - 18.0</td>
+                <td>Draft, Show</td>
+                <td>Scotland</td>
+                <td>Gentle, Docile</td>
+            </tr>
+            <tr>
+                <td>Mustang</td>
+                <td>13.0 - 15.0</td>
+                <td>Trail Riding, Endurance</td>
+                <td>United States</td>
+                <td>Hardy, Independent</td>
+            </tr>
+            <tr>
+                <td>Appaloosa</td>
+                <td>14.2 - 16.0</td>
+                <td>Western Riding, Show</td>
+                <td>United States</td>
+                <td>Gentle, Loyal</td>
+            </tr>
+            <tr>
+                <td>Morgan</td>
+                <td>14.1 - 15.2</td>
+                <td>Driving, Riding</td>
+                <td>United States</td>
+                <td>Willing, Energetic</td>
+            </tr>
+            <tr>
+                <td>Andalusian</td>
+                <td>15.0 - 16.2</td>
+                <td>Dressage, Show</td>
+                <td>Spain</td>
+                <td>Intelligent, Sensitive</td>
+            </tr>
+            <tr>
+                <td>Shetland Pony</td>
+                <td>7.0 - 11.5</td>
+                <td>Children's Riding, Driving</td>
+                <td>Scotland</td>
+                <td>Hardy, Strong-willed</td>
+            </tr>
+            <tr>
+                <td>Friesian</td>
+                <td>15.0 - 17.0</td>
+                <td>Dressage, Driving</td>
+                <td>Netherlands</td>
+                <td>Graceful, Willing</td>
+            </tr>
+            <tr>
+                <td>Paint Horse</td>
+                <td>14.0 - 16.0</td>
+                <td>Western Riding, Show</td>
+                <td>United States</td>
+                <td>Calm, Social</td>
+            </tr>
+            <tr>
+                <td>Tennessee Walker</td>
+                <td>14.3 - 17.0</td>
+                <td>Trail Riding, Show</td>
+                <td>United States</td>
+                <td>Gentle, Smooth-gaited</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <p style="font-size: 11pt; font-style: italic; text-align: center; color: #8b4513;">
+        * One hand equals 4 inches (10.16 cm). Horse height is measured from the ground to the withers (highest point of the shoulder).
+    </p>
+    
+    <p>The diversity among horse breeds reflects the varied needs and preferences of cultures around the world. Whether valued for their strength, speed, beauty, or companionship, horses continue to captivate and serve humanity in countless ways. Modern breeding programs carefully preserve these historic bloodlines while adapting to contemporary equestrian sports and recreational needs.</p>
+
+</body>
+</html>

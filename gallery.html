@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horse Images</title>
+    <style>
+        body {
+            width: 1024px;
+            margin: 0 auto;
+            padding: 40px;
+            background-color: #f5f5dc;
+            font-family: Georgia, serif;
+            font-size: 14pt;
+            line-height: 1.4em;
+            box-sizing: border-box;
+        }
+        h1 {
+            color: #8b4513;
+            font-family: 'Brush Script MT', cursive;
+            font-size: 36pt;
+            margin-bottom: 5px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .author {
+            color: #8b4513;
+            font-size: 12pt;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+        nav {
+            margin-bottom: 30px;
+        }
+        nav a {
+            color: #8b4513;
+            text-decoration: none;
+            font-size: 14pt;
+            padding: 8px 16px;
+            border: 2px solid #8b4513;
+            border-radius: 5px;
+            background-color: #fff8dc;
+            box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+            display: inline-block;
+            margin-right: 10px;
+        }
+        nav a:hover {
+            background-color: #8b4513;
+            color: #fff8dc;
+        }
+        h2 {
+            color: #8b4513;
+            font-size: 20pt;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #8b4513;
+            padding-bottom: 6px;
+        }
+
+        /* ── CSS GRID ── */
+        .photo-grid {
+            display: grid;
+            grid-template: 304px 304px / 304px 304px 304px;
+            gap: 14px;
+            margin-bottom: 12px;
+        }
+
+        .photo-grid img:nth-child(1) { grid-area: 1 / 1 / 2 / 2; }
+        .photo-grid img:nth-child(2) { grid-area: 1 / 2 / 2 / 3; }
+        .photo-grid img:nth-child(3) { grid-area: 1 / 3 / 2 / 4; }
+        .photo-grid img:nth-child(4) { grid-area: 2 / 1 / 3 / 2; }
+        .photo-grid img:nth-child(5) { grid-area: 2 / 2 / 3 / 3; }
+        .photo-grid img:nth-child(6) { grid-area: 2 / 3 / 3 / 4; }
+
+        .photo-grid img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            border: 3px solid #8b4513;
+            box-shadow: 5px 5px 10px rgba(0,0,0,0.4);
+            transition: transform 0.3s ease;
+        }
+        .photo-grid img:hover {
+            transform: scale(1.02);
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <h1>Horse Images</h1>
+    <p class="author">Made by Gracie Harran</p>
+
+    <nav>
+        <a href="index.html">← Back to Home</a>
+        <a href="breeds.html">View Horse Breeds Table →</a>
+    </nav>
+
+    <h2>Photo Gallery</h2>
+
+    <div class="photo-grid">
+        <img
+            src="https://images.unsplash.com/photo-1534307671554-9a6d81f4d629?w=304&h=304&fit=crop"
+            alt="Chestnut horse close-up portrait">
+        <img
+            src="https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?w=304&h=304&fit=crop"
+            alt="Horse galloping across an open field">
+        <img
+            src="https://images.unsplash.com/photo-1452195100486-9cc805987862?w=304&h=304&fit=crop"
+            alt="White horse standing in a misty meadow">
+        <img
+            src="https://images.unsplash.com/photo-1574482620811-1aa16ffe3c82?w=304&h=304&fit=crop"
+            alt="Two horses grazing together in a green pasture">
+        <img
+            src="https://images.unsplash.com/photo-1598974357801-cbca100e65d3?w=304&h=304&fit=crop"
+            alt="Horse and rider silhouetted against a golden sunset">
+        <img
+            src="https://images.unsplash.com/photo-1534307671554-9a6d81f4d629?w=304&h=304&fit=crop"
+            alt="Chestnut horse close-up portrait">
+    </div>
+
+
+
+</body>
+</html>

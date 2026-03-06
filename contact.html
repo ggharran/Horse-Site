@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact – Horses</title>
+    <style>
+        body {
+            width: 1024px;
+            margin: 0 auto;
+            padding: 40px;
+            background-color: #f5f5dc;
+            font-family: Georgia, serif;
+            font-size: 14pt;
+            line-height: 1.4em;
+            box-sizing: border-box;
+        }
+        h1 {
+            color: #8b4513;
+            font-family: 'Brush Script MT', cursive;
+            font-size: 36pt;
+            margin-bottom: 5px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .author {
+            color: #8b4513;
+            font-size: 12pt;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+        nav {
+            margin-bottom: 30px;
+        }
+        nav a {
+            color: #8b4513;
+            text-decoration: none;
+            font-size: 14pt;
+            padding: 8px 16px;
+            border: 2px solid #8b4513;
+            border-radius: 5px;
+            background-color: #fff8dc;
+            box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+            display: inline-block;
+            margin-right: 10px;
+        }
+        nav a:hover {
+            background-color: #8b4513;
+            color: #fff8dc;
+        }
+        p {
+            text-align: justify;
+            margin-bottom: 15px;
+        }
+
+        /* ── Form Container ── */
+        .form-wrapper {
+            max-width: 680px;
+            margin: 0 auto;
+            background: #fffdf0;
+            border: 1px solid #b8860b;
+            border-radius: 6px;
+            box-shadow: 2px 3px 6px darkgray;
+            padding: 36px 44px 40px;
+        }
+
+        /* ── Fieldset / Legend ── */
+        fieldset {
+            border: 1px solid #c8a96e;
+            border-radius: 6px;
+            padding: 18px 22px 22px;
+            margin-bottom: 24px;
+        }
+        legend {
+            color: #8b4513;
+            font-family: Georgia, serif;
+            font-size: 13pt;
+            font-weight: bold;
+            padding: 0 8px;
+        }
+
+        /* ── Labels & Inputs ── */
+        .field {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 16px;
+        }
+        .field:last-child {
+            margin-bottom: 0;
+        }
+        label {
+            color: #5a2d0c;
+            font-size: 12pt;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+            font-family: Georgia, serif;
+            font-size: 12pt;
+            padding: 8px 10px;
+            border: 1px solid #c8a96e;
+            border-radius: 4px;
+            background-color: #fffef8;
+            color: #3d2817;
+            box-shadow: inset 1px 1px 3px rgba(0,0,0,0.08);
+            transition: border-color 0.2s ease;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        select:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #8b4513;
+            box-shadow: 0 0 4px rgba(139,69,19,0.3);
+        }
+        textarea {
+            resize: vertical;
+            height: 120px;
+        }
+
+        /* ── Radio & Checkbox rows ── */
+        .radio-group,
+        .checkbox-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px 22px;
+            margin-top: 4px;
+        }
+        .radio-group label,
+        .checkbox-group label {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 12pt;
+            color: #3d2817;
+            margin-bottom: 0;
+            cursor: pointer;
+        }
+        input[type="radio"],
+        input[type="checkbox"] {
+            accent-color: #8b4513;
+            width: 15px;
+            height: 15px;
+            cursor: pointer;
+        }
+
+        /* ── Submit button ── */
+        .submit-row {
+            text-align: center;
+            margin-top: 10px;
+        }
+        input[type="submit"] {
+            background-color: #8b4513;
+            color: #fff8dc;
+            font-family: Georgia, serif;
+            font-size: 13pt;
+            padding: 10px 36px;
+            border: 2px solid #8b4513;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.25);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background-color: #fff8dc;
+            color: #8b4513;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Contact</h1>
+    <p class="author">Made by Gracie Harran</p>
+
+    <nav>
+        <a href="index.html">← Back to Home</a>
+        <a href="breeds.html">View Horse Breeds Table →</a>
+        <a href="gallery.html">View Horse Images →</a>
+    </nav>
+
+    <p>Have a question or comment? Fill out the form below!</p>
+
+    <div class="form-wrapper">
+
+        <form action="https://formsubmit.co/harran@unlv.nevada.edu" method="POST">
+
+            <!-- Personal Info -->
+            <fieldset>
+                <legend>Your Information</legend>
+
+                <div class="field">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Jane Smith">
+                </div>
+
+                <div class="field">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="jane@example.com">
+                </div>
+            </fieldset>
+
+            <!-- Message -->
+            <fieldset>
+                <legend>Your Message</legend>
+
+                <div class="field">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="e.g. Question about Arabians">
+                </div>
+
+                <div class="field">
+                    <label for="topic">Topic</label>
+                    <select id="topic" name="topic">
+                        <option value="" disabled selected>— Select a topic —</option>
+                        <option value="breeds">Horse Breeds</option>
+                        <option value="care">Horse Care</option>
+                        <option value="history">History &amp; Culture</option>
+                        <option value="riding">Riding &amp; Training</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label for="comments">Comments</label>
+                    <textarea id="comments" name="comments" placeholder="Write your message here…"></textarea>
+                </div>
+            </fieldset>
+
+            <!-- Preferences -->
+            <fieldset>
+                <legend>Preferences</legend>
+
+                <div class="field">
+                    <label>How did you find this site?</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="referral" value="search"> Search engine</label>
+                        <label><input type="radio" name="referral" value="friend"> A friend</label>
+                        <label><input type="radio" name="referral" value="social"> Social media</label>
+                        <label><input type="radio" name="referral" value="other"> Other</label>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label>I am interested in: (check all that apply)</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="interest" value="wild"> Wild / free-roaming horses</label>
+                        <label><input type="checkbox" name="interest" value="shows"> Horse shows &amp; competitions</label>
+                        <label><input type="checkbox" name="interest" value="grooming"> Grooming &amp; bonding</label>
+                        <label><input type="checkbox" name="interest" value="history"> Famous horses in history</label>
+                        <label><input type="checkbox" name="interest" value="riding"> Horseback riding</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <div class="submit-row">
+                <input type="submit" value="Send Message">
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>

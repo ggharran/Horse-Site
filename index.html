@@ -48,7 +48,7 @@
             background-color: #8b4513;
             color: #fff8dc;
         }
-        img {
+        img.horse-photo {
             max-width: 100%;
             width: 300px;
             float: left;
@@ -77,7 +77,7 @@
                 line-height: 1.8em;
                 padding: 20px;
             }
-            img {
+            img.horse-photo {
                 width: 100%;
                 float: none;
                 margin: 0 0 20px 0;
@@ -93,9 +93,33 @@
                 margin-right: 0;
             }
         }
+
+        /* ── Animation: Horse gallops across the bottom ── */
+        @keyframes gallop {
+            0%   { left: -160px; }
+            100% { left: 110%; }
+        }
+
+        .galloping-horse {
+            position: fixed;
+            bottom: 20px;
+            left: -160px;
+            width: 140px;
+            opacity: 0.85;
+            animation: gallop 7s linear infinite;
+            pointer-events: none; /* won't block clicks */
+            z-index: 999;
+        }
     </style>
 </head>
 <body>
+
+    <!-- Animated galloping horse silhouette (transparent PNG) -->
+    <img
+        class="galloping-horse"
+        src="https://www.pngall.com/wp-content/uploads/2016/04/Horse-Silhouette-PNG.png"
+        alt="Galloping horse animation" />
+
     <h1>Horses</h1>
     <p class="author">Made by Gracie Harran</p>
     
@@ -110,7 +134,7 @@
         Your browser does not support the video tag.
     </video>
     
-    <img src="https://images.unsplash.com/photo-1547581849-38ba650ad0de?q=80&w=1738&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Horses">
+    <img class="horse-photo" src="https://images.unsplash.com/photo-1547581849-38ba650ad0de?q=80&w=1738&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Horses">
     
     <p>Horses are magnificent and powerful animals that have been companions to humans for thousands of years. The domestication of horses dates back to approximately 4000 BCE on the steppes of Central Asia. This pivotal moment in human history revolutionized transportation, agriculture, and warfare, fundamentally changing the course of civilization and enabling the development of complex societies across continents.</p>
     <p>The anatomy and physiology of horses are perfectly adapted for speed and endurance. Horses are large mammals belonging to the family Equidae, characterized by their single-hoofed feet, long legs, and muscular bodies. Their cardiovascular system is highly efficient, with a large heart that can pump blood rapidly to support sustained running. Horses have excellent vision with nearly 360-degree peripheral sight, though they have two blind spots directly in front and behind them. Their ears can rotate independently to pinpoint sounds from different directions. These remarkable physical adaptations, combined with their natural flight instinct, made horses invaluable partners throughout history for both work and sport.</p>
